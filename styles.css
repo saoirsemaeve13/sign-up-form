@@ -15,7 +15,21 @@
   src: url("./assets/fascinate-inline-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+:root {
+  --primary: #292c8d;
+  --secondary: #bf69b4;
+  --dark: #06062a;
+}
+
 h1 {
   font-family: "Fascinate Inline";
   font-size: 5em;
+}
+
+header {
+  background-image: url("./assets/aron-visuals-GdP2aN8GS7k-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
