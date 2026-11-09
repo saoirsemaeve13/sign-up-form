@@ -42,16 +42,66 @@
       <div class="signup">
         <h3>Let's do this!</h3>
         <form>
-          <label>First Name</label>
-          <label>Last Name</label>
-          <label>Email</label>
-          <label>Phone Number</label>
-          <label>Password</label>
-          <label>Confirm Password</label>
-        </form>
+          <div class="field_row">
+            <div class="field_group">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+            <div class="field_group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+          </div>
+          <div class="field_row">
+            <div class="field_group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field_group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(XXX) XXX-XXXX"
+                pattern="(\d{10})|(\(\d{3}\)\s\d{3}-\d{4})"
+                title="Please enter either a 10-digit number (e.g., 1234567890) or a formatted number (e.g., (123)456-7890)"
+              />
+            </div>
+          </div>
+          <div class="field_row">
+            <div class="field_group">
+              <label for="password">Password*</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="8"
+                maxlength="20"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?\x22:{}|<>]).{8,}"
+                title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character/symbol."
+              />
+            </div>
+            <div class="field_group">
+              <label for="password_confirm">Confirm Password*</label>
+              <input
+                type="password"
+                id="password_confirm"
+                name="password_confirm"
+                required
+                minlength="8"
+                maxlength="20"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?\x22:{}|<>]).{8,}"
+                title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character/symbol."
+              />
+            </div>
+          </div>
+        
       </div>
       <div class="footer">
-        <button>Create Account</button>
+        <button type="submit">Create Account</button>
+        </form>
         <p>
           Already have an account? <a href="link.html">Click here to login.</a>
         </p>

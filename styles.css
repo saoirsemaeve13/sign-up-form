@@ -26,12 +26,14 @@ h1 {
   font-family: "Fascinate Inline";
   text-align: center;
   font-size: 2.5em;
+  margin-top: 25px;
 }
 
 body {
   display: flex;
   background: black;
   justify-content: center;
+  line-height: 1.5em;
 }
 
 .logo-img {
@@ -59,11 +61,55 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 50vw;
   height: 100vh;
   background: lightgray;
 }
 
+.information {
+  padding: 30px;
+}
+
+.signup {
+  background-color: #ffffff;
+  padding: 30px;
+  line-height: 2em;
+  box-shadow: 0 4px 20px #06062a;
+}
+
 a {
   color: var(--link-blue);
+}
+
+.field_group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.field_group label {
+  font-weight: bold;
+  color: #292c8d;
+}
+
+.field_row {
+  display: flex;
+  gap: 10px;
+}
+:invalid {
+  border-color: red;
+}
+
+:focus {
+  border-color: #292c8d;
+  box-shadow: 0 4px 8px #292c8d;
+}
+
+.footer {
+  padding: 30px;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 4px;
 }
