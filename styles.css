@@ -19,11 +19,23 @@
   --primary: #292c8d;
   --secondary: #bf69b4;
   --dark: #06062a;
+  --link-blue: #564fc3;
 }
 
 h1 {
   font-family: "Fascinate Inline";
-  font-size: 5em;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+body {
+  display: flex;
+  background: black;
+  justify-content: center;
+}
+
+.logo-img {
+  color: var(--secondary);
 }
 
 header {
@@ -31,5 +43,27 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--secondary);
+  width: 33vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-credit {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  background: lightgray;
+}
+
+a {
+  color: var(--link-blue);
 }
